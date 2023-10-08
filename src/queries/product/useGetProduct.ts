@@ -3,7 +3,7 @@ import axios from '@/utils/axios'
 import { useQuery } from '@tanstack/react-query'
 
 interface Params {
-  readonly status: 'active' | 'inactive'
+  readonly status?: 'active' | 'inactive'
 }
 
 export default function useGetProduct({ status }: Params) {

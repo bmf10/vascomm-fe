@@ -15,7 +15,7 @@ import usePatchProduct from '@/queries/product/usePatchProduct'
 const User = () => {
   const [modal, setModal] = useState<boolean>(false)
   const [edit, setEdit] = useState<Product>()
-  const { data, refetch } = useGetProduct()
+  const { data, refetch } = useGetProduct({})
   const { mutateAsync } = usePatchProduct()
 
   const handleHide = async (value: Product) => {
